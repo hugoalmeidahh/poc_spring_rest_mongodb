@@ -9,5 +9,4 @@ public class PocSpringRestMongodbApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PocSpringRestMongodbApplication.class, args);
 	}
-
 }
