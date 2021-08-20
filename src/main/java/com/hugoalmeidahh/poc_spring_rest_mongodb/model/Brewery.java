@@ -3,7 +3,7 @@ package com.hugoalmeidahh.poc_spring_rest_mongodb.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Brewery")
+@Document(collection = "brewery")
 public class Brewery {
     @Id
     private int id;
@@ -11,8 +11,11 @@ public class Brewery {
     private String city;
     private String state;
 
-    public Brewery(int id, String name, String city, String state) {
-        this.id = id;
+    public Brewery() {
+
+    }
+
+    public Brewery( String name, String city, String state) {
         this.name = name;
         this.city = city;
         this.state = state;
